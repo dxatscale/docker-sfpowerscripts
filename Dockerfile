@@ -24,12 +24,16 @@ RUN apt-get update -qq && \
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
 
-# Set XDG environment variables to SFDX plugins directory
+# Set XDG environment variables explicitly so that GitHub Actions does not apply
+# default paths that do not point to the plugins directory
 # https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
 ENV XDG_DATA_HOME=/sfdx_plugins/.local/share
 ENV XDG_CONFIG_HOME=/sfdx_plugins/.config
 ENV XDG_CACHE_HOME=/sfdx_plugins/.cache
 
+# Create isolated plugins directory with rwx permission for all users
+# Azure pipelines switches to a container-user which does not have access
+# to the root directory where plugins are normally installed
 RUN mkdir -p $XDG_DATA_HOME && \
     mkdir -p $XDG_CONFIG_HOME && \
     mkdir -p $XDG_CACHE_HOME && \
