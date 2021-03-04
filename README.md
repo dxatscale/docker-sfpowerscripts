@@ -2,7 +2,7 @@
 
 # Supported tags and respective `Dockerfile` links
 
-- [3.05-ubuntu20.04, latest](https://github.com/Accenture/sfpowerscripts/blob/develop/Dockerfile)
+- [20-ubuntu20.04, latest](https://github.com/Accenture/sfpowerscripts/blob/develop/Dockerfile)
 
 # What is sfpowerscripts?
 
