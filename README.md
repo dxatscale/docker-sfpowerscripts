@@ -1,8 +1,8 @@
 # docker-sfpowerscripts
 
-# Supported tags and respective `Dockerfile` links
+# Supported tags and respective Dockerfile links
 
-- [20-ubuntu20.04, latest](https://github.com/Accenture/sfpowerscripts/blob/develop/Dockerfile)
+- [20-ubuntu20.04, latest](https://github.com/dxatscale/docker-sfpowerscripts/blob/main/Dockerfile)
 
 # What is sfpowerscripts?
 
@@ -16,15 +16,16 @@ The image contains sfpowerscripts and the dependencies it needs to run:
 
 - Node
 - OpenJDK
+- git
 - [SFDX CLI](https://www.npmjs.com/package/sfdx-cli)
 - [sfpowerscripts](https://www.npmjs.com/package/@dxatscale/sfpowerscripts)
 - [sfpowerkit](https://www.npmjs.com/package/sfpowerkit)
 - [sfdmu](https://www.npmjs.com/package/sfdmu)
-- git
+
 
 # License
 
-View [license information](https://github.com/Accenture/sfpowerscripts/blob/develop/LICENSE) for sfpowerscripts.
+View [license information](https://github.com/dxatscale/docker-sfpowerscripts/blob/main/LICENSE) for this docker file.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
