@@ -1,7 +1,5 @@
 FROM ubuntu:20.04
 
-#MAKE THIS IMAGE A NO
-RUN apt update && DEBIAN_FRONTEND=noninteractive
 
 # Install Node.js v14.x
 RUN apt-get update -qq && \
@@ -19,6 +17,7 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - \
 
 # Install OpenJDK-8
 RUN apt-get update -qq && \
+    DEBIAN_FRONTEND=noninteractive \
     apt-get install -qq openjdk-8-jdk && \
     apt-get clean -qq && \
 	rm -rf /var/cache/oracle-jdk8-installer && \
