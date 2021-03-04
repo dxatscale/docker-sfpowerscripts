@@ -1,5 +1,12 @@
 FROM ubuntu:20.04
 
+#SETUP TIMEZONE
+ENV TZ=Australia/Melbourne
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN apt update
+RUN apt install -y tzdata
+
+
 # Install Node.js v14.x
 RUN apt-get update -qq && \
     DEBIAN_FRONTEND=noninteractive apt-get install -qq \
