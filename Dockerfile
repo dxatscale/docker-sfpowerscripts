@@ -1,5 +1,6 @@
 FROM ubuntu:20.04
 
+RUN apt-get update && apt-get -y upgrade
 
 # Install Node.js v14.x
 RUN apt-get update -qq && \
