@@ -2,7 +2,8 @@
 
 # Supported tags and respective Dockerfile links
 
-- [20-ubuntu20.04, latest](https://github.com/dxatscale/docker-sfpowerscripts/blob/main/Dockerfile)
+- [21-ubuntu20.04, latest](https://github.com/dxatscale/docker-sfpowerscripts/blob/main/Dockerfile)
+- [20-ubuntu20.04](https://github.com/dxatscale/docker-sfpowerscripts/blob/main/Release20/Dockerfile)
 
 # What is sfpowerscripts?
 

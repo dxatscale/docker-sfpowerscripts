@@ -10,7 +10,7 @@ RUN apt-get update -qq && \
         jq \
         zip \
         unzip \
-	    make
+	make
 
 RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - \
     && sudo apt-get install -qq nodejs
@@ -48,9 +48,9 @@ RUN export XDG_DATA_HOME && \
 
 # Install SFDX CLI
 RUN npm update -g && \
-    npm install sfdx-cli@7.93.1 --global
+    npm install sfdx-cli@7.89.2 --global
 
 # Install sfdx plugins
 RUN echo 'y' | sfdx plugins:install sfdmu@3.10.5
-RUN echo 'y' | sfdx plugins:install sfpowerkit@2.8.6
-RUN echo 'y' | sfdx plugins:install @dxatscale/sfpowerscripts@4.4.10
+RUN echo 'y' | sfdx plugins:install sfpowerkit@2.7.10
+RUN echo 'y' | sfdx plugins:install @dxatscale/sfpowerscripts@3.0.6
