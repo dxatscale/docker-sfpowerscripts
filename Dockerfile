@@ -52,5 +52,5 @@ RUN npm update -g && \
 
 # Install sfdx plugins
 RUN echo 'y' | sfdx plugins:install sfdmu@3.10.5
-RUN echo 'y' | sfdx plugins:install sfpowerkit@2.8.6
-RUN echo 'y' | sfdx plugins:install @dxatscale/sfpowerscripts@4.4.11
+RUN echo 'y' | sfdx plugins:install sfpowerkit@2.8.7
+RUN echo 'y' | sfdx plugins:install @dxatscale/sfpowerscripts@4.4.12
