@@ -48,9 +48,9 @@ RUN export XDG_DATA_HOME && \
 
 # Install SFDX CLI
 RUN npm update -g && \
-    npm install sfdx-cli@7.104.0 --global
+    npm install sfdx-cli@7.107.0 --global
 
 # Install sfdx plugins
 RUN echo 'y' | sfdx plugins:install sfdmu@4.2.6
-RUN echo 'y' | sfdx plugins:install sfpowerkit@2.9.2
+RUN echo 'y' | sfdx plugins:install sfpowerkit@3.1.5
 RUN echo 'y' | sfdx plugins:install @dxatscale/sfpowerscripts@7.0.1
