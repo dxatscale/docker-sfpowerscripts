@@ -51,6 +51,6 @@ RUN npm update -g && \
     npm install sfdx-cli@7.110.0 --global
 
 # Install sfdx plugins
-RUN echo 'y' | sfdx plugins:install sfdmu@4.4.3
+RUN echo 'y' | sfdx plugins:install sfdmu@4.2.6
 RUN echo 'y' | sfdx plugins:install sfpowerkit@3.1.6
-RUN echo 'y' | sfdx plugins:install @dxatscale/sfpowerscripts@8.1.10
+RUN echo 'y' | sfdx plugins:install @dxatscale/sfpowerscripts@7.1.21

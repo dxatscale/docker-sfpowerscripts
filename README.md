@@ -2,7 +2,8 @@
 
 # Supported tags and respective Dockerfile links
 
-- [release-july21, latest](https://github.com/dxatscale/docker-sfpowerscripts/blob/main/Dockerfile)
+- [release-aug21, latest](https://github.com/dxatscale/docker-sfpowerscripts/blob/main/Dockerfile)
+- [release-july21](https://github.com/dxatscale/docker-sfpowerscripts/blob/main/July21/Dockerfile)
 - [23-ubuntu20.04](https://github.com/dxatscale/docker-sfpowerscripts/blob/main/Release23/Dockerfile)
 - [22-ubuntu20.04](https://github.com/dxatscale/docker-sfpowerscripts/blob/main/Release22/Dockerfile)
 - [21-ubuntu20.04](https://github.com/dxatscale/docker-sfpowerscripts/blob/main/Release21/Dockerfile)
