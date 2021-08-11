@@ -48,7 +48,8 @@ RUN export XDG_DATA_HOME && \
 
 # Install SFDX CLI
 RUN npm update -g && \
-    npm install sfdx-cli@7.110.0 --global
+    npm install sfdx-cli@7.110.0 --global && \
+    npm install vlocity@1.14.10 --global
 
 # Install sfdx plugins
 RUN echo 'y' | sfdx plugins:install sfdmu@4.4.3
