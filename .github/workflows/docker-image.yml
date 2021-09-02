@@ -24,4 +24,6 @@ jobs:
       with:
           push: true
           tags: dxatscale/sfpowerscripts:latest
+          cache-from: type=registry,ref=user/dxatscale/sfpowerscripts:buildcache
+          cache-to: type=registry,ref=user/dxatscale/sfpowerscripts:buildcache,mode=max
       
