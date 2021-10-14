@@ -29,4 +29,3 @@ jobs:
           pull: true
           tags: dxatscale/sfpowerscripts:latest
           cache-from: type=registry,ref=dxatscale/sfpowerscripts:buildcache
-          cache-to: type=registry,ref=dxatscale/sfpowerscripts:buildcache,mode=max
