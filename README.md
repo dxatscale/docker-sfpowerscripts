@@ -24,10 +24,12 @@ The image contains sfpowerscripts and the dependencies it needs to run:
 - Node
 - OpenJDK
 - git
+- puppetteer dependencies
 - [SFDX CLI](https://www.npmjs.com/package/sfdx-cli)
 - [sfpowerscripts](https://www.npmjs.com/package/@dxatscale/sfpowerscripts)
 - [sfpowerkit](https://www.npmjs.com/package/sfpowerkit)
 - [sfdmu](https://www.npmjs.com/package/sfdmu)
+- [sfdx-browserforce-plugin](https://www.npmjs.com/package/sfdx-browserforce-plugin)
 
 
 # License
