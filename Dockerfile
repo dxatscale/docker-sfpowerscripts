@@ -11,7 +11,7 @@ RUN apt-get update -qq && \
         zip \
         unzip \
 	make \
-	libxkbcommon-x11
+	libxkbcommon-x11-0
 
 RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - \
     && sudo apt-get install -qq nodejs
