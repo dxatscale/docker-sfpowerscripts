@@ -10,7 +10,8 @@ RUN apt-get update -qq && \
         jq \
         zip \
         unzip \
-	    make
+	make \
+	libxkbcommon-x11-0
 
 RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - \
     && sudo apt-get install -qq nodejs
@@ -23,6 +24,9 @@ RUN apt-get update -qq && \
     apt-get clean -qq && \
 	rm -rf /var/cache/oracle-jdk8-installer && \
     rm -rf /var/lib/apt/lists/*
+    
+
+    
 
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
