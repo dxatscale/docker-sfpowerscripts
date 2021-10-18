@@ -24,7 +24,10 @@ RUN apt-get update -qq && \
     apt-get clean -qq && \
 	rm -rf /var/cache/oracle-jdk8-installer && \
     rm -rf /var/lib/apt/lists/*
-    
+
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+RUN export JAVA_HOME
+
 
 # Install latest chrome dev package and fonts to support major charsets (Chinese, Japanese, Arabic, Hebrew, Thai and a few others)
 # Note: this installs the necessary libs to make the bundled version of Chromium that Puppeteer
@@ -37,10 +40,8 @@ RUN apt-get update \
     && apt-get install -y google-chrome-stable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf libxss1 \
       --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
-    
 
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
-RUN export JAVA_HOME
+
 
 # Set XDG environment variables explicitly so that GitHub Actions does not apply
 # default paths that do not point to the plugins directory
@@ -71,7 +72,3 @@ RUN echo 'y' | sfdx plugins:install sfdmu@4.4.3
 RUN echo 'y' | sfdx plugins:install sfpowerkit@3.3.2
 RUN echo 'y' | sfdx plugins:install @dxatscale/sfpowerscripts@8.5.2
 RUN echo 'y' | sfdx plugins:install sfdx-browserforce-plugin@2.6.3
-
-
-
-
