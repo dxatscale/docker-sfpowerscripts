@@ -8,7 +8,7 @@ on:
       tag:
         description: 'release tag for latest image'
         required: true
-        default: 'oct-21'
+        default: 'release-oct21'
 
 jobs:
 
