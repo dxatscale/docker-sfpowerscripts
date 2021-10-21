@@ -1,14 +1,11 @@
 name: Build and Publish Docker Image to DockerHub
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
     inputs:
       tag:
         description: 'release tag for latest image'
         required: true
-        default: 'release-oct21'
 
 jobs:
 
