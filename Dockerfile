@@ -18,7 +18,6 @@ RUN apt-get update -qq && \
 RUN curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash - \
     && sudo apt-get install -qq nodejs
 
-
 # Install OpenJDK-8
 RUN apt-get update -qq && \
     DEBIAN_FRONTEND=noninteractive \
@@ -66,8 +65,10 @@ RUN export XDG_DATA_HOME && \
 
 # Install SFDX CLI
 RUN npm update -g && \
-    npm install sfdx-cli@7.129.0 --global && \
-    npm install vlocity@1.14.16 --global
+    # use yarn, as npm v6 is affected by caching issue
+    npm install --global yarn && \
+    yarn global add sfdx-cli@7.129.0 && \
+    yarn global add vlocity@1.14.16
 
 # Install sfdx plugins
 RUN echo 'y' | sfdx plugins:install sfdmu@4.10.3
