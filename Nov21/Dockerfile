@@ -1,7 +1,5 @@
 FROM ubuntu:20.10
 
-# Create symbolic link from sh to bash
-RUN ln -sf bash /bin/sh
 
 # Install Node.js v14.x
 RUN apt-get update -qq && \
@@ -15,7 +13,7 @@ RUN apt-get update -qq && \
 	make \
 	libxkbcommon-x11-0
 
-RUN curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - \
+RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - \
     && sudo apt-get install -qq nodejs
 
 
@@ -66,11 +64,11 @@ RUN export XDG_DATA_HOME && \
 
 # Install SFDX CLI
 RUN npm update -g && \
-    npm install sfdx-cli@7.129.0 --global && \
-    npm install vlocity@1.14.16 --global
+    npm install sfdx-cli@7.120.0 --global && \
+    npm install vlocity@1.14.10 --global
 
 # Install sfdx plugins
-RUN echo 'y' | sfdx plugins:install sfdmu@4.10.3
-RUN echo 'y' | sfdx plugins:install sfpowerkit@3.4.2
-RUN echo 'y' | sfdx plugins:install @dxatscale/sfpowerscripts@10.2.0
-RUN echo 'y' | sfdx plugins:install sfdx-browserforce-plugin@2.7.1
+RUN echo 'y' | sfdx plugins:install sfdmu@4.4.3
+RUN echo 'y' | sfdx plugins:install sfpowerkit@3.3.4
+RUN echo 'y' | sfdx plugins:install @dxatscale/sfpowerscripts@9.3.12
+RUN echo 'y' | sfdx plugins:install sfdx-browserforce-plugin@2.6.3
