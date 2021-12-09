@@ -71,7 +71,7 @@ RUN npm update -g && \
     yarn global add vlocity@1.14.16
 
 # Install sfdx plugins
-RUN echo 'y' | sfdx plugins:install sfdmu@4.10.3
+RUN echo 'y' | sfdx plugins:install sfdx-browserforce-plugin@2.7.1
+RUN echo 'y' | sfdx plugins:install sfdmu@4.4.3
 RUN echo 'y' | sfdx plugins:install sfpowerkit@3.4.2
 RUN echo 'y' | sfdx plugins:install @dxatscale/sfpowerscripts@10.2.2
-RUN echo 'y' | sfdx plugins:install sfdx-browserforce-plugin@2.7.1
