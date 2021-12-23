@@ -17,7 +17,7 @@
 
 sfpowerscripts is a build system for package-based development on Salesforce that can be implemented in any CI/CD system of choice. sfpowerscripts is part of the DX@Scale initiative, productivity boosters for engineering teams on Salesforce.
 
-![sfpowerscripts logo](https://repository-images.githubusercontent.com/248449736/5d08c600-728e-11ea-8267-ae1aceebea60 "sfpowerscripts")
+![sfpowerscripts logo](https://repository-images.githubusercontent.com/248449736/efc1bf15-b87f-4926-a675-7841650c2433 "sfpowerscripts")
 
 # What's in the image?
 
