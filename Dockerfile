@@ -1,4 +1,4 @@
-FROM ubuntu:20.10
+FROM ubuntu:20.04
 
 # Create symbolic link from sh to bash
 RUN ln -sf bash /bin/sh
