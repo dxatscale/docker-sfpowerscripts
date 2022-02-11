@@ -74,4 +74,4 @@ RUN npm update -g && \
 RUN echo 'y' | sfdx plugins:install sfdx-browserforce-plugin@2.8.0
 RUN echo 'y' | sfdx plugins:install sfdmu@4.12.7
 RUN echo 'y' | sfdx plugins:install sfpowerkit@4.1.5
-RUN echo 'y' | sfdx plugins:install @dxatscale/sfpowerscripts@10.2.13
+RUN echo 'y' | sfdx plugins:install @dxatscale/sfpowerscripts@10.2.15
