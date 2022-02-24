@@ -1,5 +1,9 @@
 # docker-sfpowerscripts
 
+[![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/dxatscale/sfpowerscripts/release-feb22)](https://hub.docker.com/r/dxatscale/sfpowerscripts) [![Docker Pulls](https://img.shields.io/docker/pulls/dxatscale/sfpowerscripts)](https://hub.docker.com/r/dxatscale/sfpowerscripts)
+
+
+
 # Supported tags and respective Dockerfile links
 
 - [release-feb22, latest](https://github.com/dxatscale/docker-sfpowerscripts/blob/main/Dockerfile)
