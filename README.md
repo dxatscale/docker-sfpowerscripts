@@ -1,5 +1,7 @@
 # docker-sfpowerscripts
 
+# The repository is now archived. The docker images will be published in sync with sfpowerscripts and will be available in sfpowerscripts repository [here](https://github.com/Accenture/sfpowerscripts)
+
 [![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/dxatscale/sfpowerscripts/release-feb22)](https://hub.docker.com/r/dxatscale/sfpowerscripts) [![Docker Pulls](https://img.shields.io/docker/pulls/dxatscale/sfpowerscripts)](https://hub.docker.com/r/dxatscale/sfpowerscripts)
 
 
